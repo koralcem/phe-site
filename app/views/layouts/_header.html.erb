@@ -1,0 +1,35 @@
+<header class="navbar navbar-fixed-top">
+  <div class="container center">
+    <svg version="1.1" baseProfile="full" width="130" height="98" xmlns="http://www.w3.org/2000/svg">
+    	<defs>
+        <clipPath id="keep-left-half">
+          <rect x="0" y="0" width="65" height="98" />
+        </clipPath>
+      </defs>
+    
+    	<ellipse class="blue-side"/>
+    	<ellipse clip-path="url(#keep-left-half)"/>
+    
+    	<text x="65" y="54" font-size="116">&#x03a8;</text>
+    	<text x="65" y="54" font-size="116" clip-path="url(#keep-left-half)" class="blue-side">&#x03a8;</text>
+    </svg>
+    <span class="title">Psikolojik Hizmetler Enstitüsü</span>
+  </div>
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Amacımız",    root_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Ekibimiz <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Psikolog Dr. Nedret Öztan", ekibimiz_nedret_path %></li>
+            <li><%= link_to "Uzman Psikolog Füsun Kurdoğlu", ekibimiz_fusun_path %></li>
+          </ul>
+        </li>
+        <li><%= link_to "Bize Ulaşın", bizeulasin_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
