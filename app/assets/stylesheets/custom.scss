@@ -1,0 +1,54 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$phe-blue: #0860a8;
+
+body {
+  padding-top: 180px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+header {
+  color: $phe-blue;
+  background: rgba(255, 255, 255, 1.0);
+  
+  svg {
+    margin: 10px 20px;
+    vertical-align: middle;
+    
+    ellipse {
+      cx: 65;
+      cy: 49;
+      rx: 63;
+      ry: 47;
+      stroke-width: 2;
+      stroke: $phe-blue;
+      fill: white;
+      &.blue-side { fill: $phe-blue; }
+    }
+    
+    text { 
+      text-anchor: middle;
+      font-family: "Times New Roman";
+      dominant-baseline: central;
+      fill: white;
+      &.blue-side { fill: $phe-blue; }
+    }
+  }
+  
+  span {
+    vertical-align: middle;
+    font-size: 3em;
+  }
+}
+
+.center {
+  text-align: center;
+}
