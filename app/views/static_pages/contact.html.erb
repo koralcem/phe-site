@@ -2,5 +2,32 @@
 <p><strong>E-posta:</strong> psikolojikhizmetler@gmail.com</p>
 <p><strong>Telefon:</strong> 0-553-408-2079, 0-312-417-9365</p>
 <p><strong>Adres:</strong> İnkılap Sok. No: 24/8 Kızılay/ANKARA</p>
-<div id="map-canvas" style="width:500px;height:400px"></div>
+<div id="map" style="width:500px;height:400px"></div>
+<script>
+  var map;
+  function initMap() {
+    latLngForPHE = new google.maps.LatLng(39.9201, 32.8571);
 
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: latLngForPHE,
+      zoom: 18
+    });
+
+    pheMarker = new google.maps.Marker({
+      position: latLngForPHE,
+      map: map,
+      title: 'Psikolojik Hizmetler Enstitusu',
+      animation: google.maps.Animation.DROP
+    });
+
+    infoWindow = new google.maps.InfoWindow({
+      content: '<p><b>Psikolojik Hizmetler Enstitüsü</b></p>' + '<p>İnkılap Sok. No: 24/8</p>' + '<p>Kızılay/ANKARA</p>'
+    });
+
+    google.maps.event.addListener(pheMarker, 'click', function() {
+      infoWindow.open(map, pheMarker);
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqVX7W4_WiEtDH6zEX7llG-ykL7tBmUg&callback=initMap"
+async defer></script>
