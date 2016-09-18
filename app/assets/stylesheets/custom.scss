@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 $phe-blue: #0860a8;
+$border-style: 3px solid $phe-blue;
 
 body {
   padding-top: 180px;
@@ -18,11 +19,11 @@ textarea {
 header {
   color: $phe-blue;
   background: rgba(255, 255, 255, 1.0);
-  
+
   svg {
     margin: 10px 20px;
     vertical-align: middle;
-    
+
     ellipse {
       cx: 65;
       cy: 49;
@@ -33,8 +34,8 @@ header {
       fill: white;
       &.blue-side { fill: $phe-blue; }
     }
-    
-    text { 
+
+    text {
       text-anchor: middle;
       font-family: "Times New Roman";
       dominant-baseline: central;
@@ -42,10 +43,15 @@ header {
       &.blue-side { fill: $phe-blue; }
     }
   }
-  
+
   span {
     vertical-align: middle;
     font-size: 3em;
+  }
+
+  .navigation {
+    border-bottom: $border-style;
+    border-top: $border-style;
   }
 }
 

@@ -13,7 +13,5 @@ git push heroku
 rails server -b $IP -p $PORT
 
 ==========================
-- get google maps api key
-- get the map working
-- maybe a background color?
+- videos
 - publish
