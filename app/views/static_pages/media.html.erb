@@ -1,0 +1,15 @@
+<% provide(:title, "Medya / Basın") %>
+
+<p>Media page</p>
+<ul class="youtube-video-gallery">
+  <li><a href="https://www.youtube.com/watch?v=JYbRRRG6Ovg">Test</a></li>
+  <li><a href="https://www.youtube.com/watch?v=JYbRRRG6Ovg">Test</a></li>
+</ul>
+
+<script>
+  $(document).ready(function(){
+      $("ul.youtube-video-gallery").youtubeVideoGallery( {
+        plugin:'none'
+      } );
+  });
+</script>

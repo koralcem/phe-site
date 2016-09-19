@@ -12,7 +12,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Nedret Öztan | PHE"
   end
-  
+
   test "should get fusun" do
     get ekibimiz_fusun_path
     assert_response :success
@@ -23,6 +23,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get bizeulasin_path
     assert_response :success
     assert_select "title", "Bize Ulaşın | PHE"
+  end
+
+  test "should get media" do
+    get medya_path
+    assert_response :success
+    assert_select "title", "Medya / Basın | PHE"
   end
 
 end

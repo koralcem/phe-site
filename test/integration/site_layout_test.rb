@@ -8,5 +8,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", ekibimiz_nedret_path
     assert_select "a[href=?]", ekibimiz_fusun_path
     assert_select "a[href=?]", bizeulasin_path
+    assert_select "a[href=?]", medya_path
   end
 end
