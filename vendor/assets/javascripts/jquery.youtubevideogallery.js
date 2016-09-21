@@ -36,7 +36,7 @@
                     playButton: 'play-button-red@40.png',
                     plugin:'self',
                     style:'',
-                    title:'default',
+                    title:'full',
                     thumbWidth:250,
                     videos:[],
                     urlImg : 'http://img.youtube.com/vi/$id/0.jpg',
