@@ -1,6 +1,5 @@
 <% provide(:title, "Medya / Basın") %>
 
-<p>Media page</p>
 <ul class="youtube-video-gallery">
   <% @videos.each do |url, summary| %>
     <li><%= link_to summary, url %></li>

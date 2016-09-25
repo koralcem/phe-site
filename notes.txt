@@ -13,5 +13,3 @@ git push heroku
 rails server -b $IP -p $PORT
 
 ==========================
-- videos
-- publish
