@@ -34,6 +34,7 @@ class StaticPagesController < ApplicationController
       'https://www.youtube.com/watch?v=AJuhHHkdr4o' => 'Mardin katliamı çalışmaları 1',
       'https://www.youtube.com/watch?v=JmovQ5SecNU' => 'Mardin katliamı çalışmaları 2',
       'https://www.youtube.com/watch?v=6WnngWqxSbI' => 'Van Erciş depreminin hemen sonrası',
+      'https://www.youtube.com/watch?v=PmSlROYpYsM' => 'Van Depremi sonrasi psikososyal calismalar degerlendirme',
     }
   end
 end
