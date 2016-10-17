@@ -37,4 +37,7 @@ class StaticPagesController < ApplicationController
       'https://www.youtube.com/watch?v=PmSlROYpYsM' => 'Coping with traumatic experiences',
     }
   end
+  
+  def publications
+  end
 end

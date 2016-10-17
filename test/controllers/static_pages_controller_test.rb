@@ -30,5 +30,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Medya / Basın | PHE"
   end
+  
+  test "should get publications" do
+    get yayinlar_path
+    assert_response :success
+    assert_select "title", "Yayınlar | PHE" 
+  end
 
 end

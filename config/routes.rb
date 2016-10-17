@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'ekibimiz/fusun',   to: 'static_pages#fusun'
   get 'bizeulasin',       to: 'static_pages#contact'
   get 'medya',            to: 'static_pages#media'
+  get 'yayinlar',         to: 'static_pages#publications'
 end
