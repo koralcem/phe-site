@@ -1,0 +1,20 @@
+---
+custom_cs: youtube-video-gallery.css
+custom_js: jquery.youtubevideogallery.js
+---
+
+<h1>Medyada Nedret Öztan</h1>
+<ul class="youtube-video-gallery">
+  <% @videos.each do |url, summary| %>
+    <li><%= link_to summary, url %></li>
+  <% end %>
+</ul>
+
+<script>
+  $(document).ready(function(){
+      $("ul.youtube-video-gallery").youtubeVideoGallery( {
+        plugin: 'none',
+        title: 'full',
+      } );
+  });
+</script>
