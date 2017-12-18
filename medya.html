@@ -1,13 +1,15 @@
 ---
-custom_cs: youtube-video-gallery.css
+custom_css: youtube-video-gallery.css
 custom_js: jquery.youtubevideogallery.js
+videos:
+  "https://www.youtube.com/watch?v=EaNzcVglPdo": "Deprem Psikolojisi"
 ---
 
 <h1>Medyada Nedret Öztan</h1>
 <ul class="youtube-video-gallery">
-  <% @videos.each do |url, summary| %>
-    <li><%= link_to summary, url %></li>
-  <% end %>
+  {% for video in page.videos %}
+    <li><a href="{{ video[0] }}">{{ video[1] }}</li>
+  {% endfor %}
 </ul>
 
 <script>
