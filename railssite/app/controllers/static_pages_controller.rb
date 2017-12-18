@@ -14,6 +14,7 @@ class StaticPagesController < ApplicationController
   def media
     @videos = {
       'https://www.youtube.com/watch?v=EaNzcVglPdo' => 'Deprem Psikolojisi',  #1
+
       'https://www.youtube.com/watch?v=JYbRRRG6Ovg' => 'Kırık karneye tepki',
       'https://www.youtube.com/watch?v=znyRqZJfUy8' => 'Zayıf karneye tepki',
       'https://www.youtube.com/watch?v=ehm3jkA3c6U' => 'Çocuk ve travmatik yaşantılar',
@@ -37,7 +38,7 @@ class StaticPagesController < ApplicationController
       'https://www.youtube.com/watch?v=PmSlROYpYsM' => 'Coping with traumatic experiences',
     }
   end
-  
+
   def publications
   end
 end
