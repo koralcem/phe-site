@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,12 +23,21 @@
         <script src='js/{{ js_file }}' type="text/javascript"></script>
       {% endfor %}
     {% endif %}
-
   </head>
+
   <body>
-    {% include header.html %}
+    <header class="navbar">
+      <div class="container center">
+        {% include logo.html %}
+        <span class="title">Psikolojik Hizmetler Enstitüsü</span>
+      </div>
+      <div class="container navigation">
+        {% include navigation-tr.html %}
+      </div>
+    </header>
     <div class="container">
       {{ content }}
     </div>
   </body>
+
 </html>
