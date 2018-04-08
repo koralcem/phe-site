@@ -1,0 +1,16 @@
+#flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#flex-container > * {
+  margin: 0px 10px;
+}
+
+#flex-container > #vision {
+  flex: 5 1 500px;
+}
+
+#flex-container > #announcements {
+  flex: 1 1 250px;
+}
