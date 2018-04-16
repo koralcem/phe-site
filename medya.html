@@ -50,18 +50,20 @@ videos:
   : "Coping with traumatic experiences"
 ---
 
-<h1>Medyada Nedret Öztan</h1>
-<ul class="youtube-video-gallery">
-  {% for video in page.videos %}
-    <li><a href="{{ video[0] }}">{{ video[1] }}</a></li>
-  {% endfor %}
-</ul>
+<main>
+  <h1>Medyada Nedret Öztan</h1>
+  <ul class="youtube-video-gallery">
+    {% for video in page.videos %}
+      <li><a href="{{ video[0] }}">{{ video[1] }}</a></li>
+    {% endfor %}
+  </ul>
 
-<script>
-  $(document).ready(function(){
-    $("ul.youtube-video-gallery").youtubeVideoGallery( {
-      plugin: 'none',
-      title: 'full',
-    } );
-  });
-</script>
+  <script>
+    $(document).ready(function(){
+      $("ul.youtube-video-gallery").youtubeVideoGallery( {
+        plugin: 'none',
+        title: 'full',
+      } );
+    });
+  </script>
+</main>

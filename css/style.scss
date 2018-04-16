@@ -3,6 +3,10 @@
 
 $phe-blue: #0860a8;
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 header {
   svg {
     display: block;
@@ -26,13 +30,17 @@ header {
 
   h1 {
     text-align: center;
+    color: $phe-blue;
   }
 }
 
 nav {
   display: flex;
+  $border-style: 2px solid $phe-blue;
+  border-top: $border-style;
+  border-bottom: $border-style;
 
-  .dropdown {
+  .dropdown-content {
     display: none;
   }
 
@@ -42,6 +50,33 @@ nav {
 
   a {
     display: block;
-    width: 100px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: $phe-blue;
+
+    /*&:link, &:visited, &:focus, &:active {
+      color: $phe-blue;
+    }*/
+
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+}
+
+main {
+  line-height: 1.4rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $phe-blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
