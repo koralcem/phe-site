@@ -3,26 +3,45 @@
 
 $phe-blue: #0860a8;
 
-svg {
-  display: block;
-  margin: 0 auto;
+header {
+  svg {
+    display: block;
+    margin: 0 auto;
 
-  ellipse {
-    stroke-width: 2px;
-    stroke: $phe-blue;
-    fill: white;
-    &.blue-side { fill: $phe-blue; }
+    ellipse {
+      stroke-width: 2px;
+      stroke: $phe-blue;
+      fill: white;
+      &.blue-side { fill: $phe-blue; }
+    }
+
+    text {
+      text-anchor: middle;
+      font-family: "Times New Roman";
+      dominant-baseline: central;
+      fill: white;
+      &.blue-side { fill: $phe-blue; }
+    }
   }
 
-  text {
-    text-anchor: middle;
-    font-family: "Times New Roman";
-    dominant-baseline: central;
-    fill: white;
-    &.blue-side { fill: $phe-blue; }
+  h1 {
+    text-align: center;
   }
 }
 
-header > h1 {
-  text-align: center;
+nav {
+  display: flex;
+
+  .dropdown {
+    display: none;
+  }
+
+  div:last-child {
+    margin-left: auto;
+  }
+
+  a {
+    display: block;
+    width: 100px;
+  }
 }
