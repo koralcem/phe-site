@@ -36,6 +36,7 @@ header {
 
 nav {
   display: flex;
+  flex-flow: row wrap;
   $border-style: 2px solid $phe-blue;
   border-top: $border-style;
   border-bottom: $border-style;
@@ -64,10 +65,6 @@ nav {
     text-decoration: none;
     color: $phe-blue;
 
-    /*&:link, &:visited, &:focus, &:active {
-      color: $phe-blue;
-    }*/
-
     &:hover {
       background-color: #eeeeee;
     }
@@ -87,6 +84,17 @@ main {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+// The menu no longer fits horizontally when narrower than 650 px
+@media screen and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+
+    div:last-child {
+      margin-left: unset;
     }
   }
 }
