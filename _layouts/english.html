@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
-
   {% include metadata.html %}
-
   <body>
     <header>
       {% include logo.svg %}
-      <div>
-        {% include en/navigation.html %}
-      </div>
+      <h1>Psikolojik Hizmetler Enstitüsü</h1>
     </header>
-    <div>
-      {{ content }}
-    </div>
+    {% include en/navigation.html %}
+    {{ content }}
   </body>
-
 </html>

@@ -40,6 +40,7 @@ nav {
   $border-style: 2px solid $phe-blue;
   border-top: $border-style;
   border-bottom: $border-style;
+  margin-bottom: 1rem;
 
   .dropdown {
     position: relative;
@@ -73,7 +74,6 @@ nav {
 
 main {
   line-height: 1.4rem;
-  margin-top: 1rem;
 
   h2 {
     text-align: center;
