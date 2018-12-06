@@ -120,6 +120,9 @@ main {
   }
 }
 
+.ui-accordion-header.ui-state-active {
+  background-color: $phe-blue;
+}
 
 // The menu no longer fits horizontally when narrower than 650 px
 @media screen and (max-width: 650px) {
