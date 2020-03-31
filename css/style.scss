@@ -118,6 +118,30 @@ main {
     margin-right: auto;
     display: block;
   }
+
+  img#phone {
+    animation-duration: 1s;
+    animation-name: phone-rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes phone-rotate {
+    from {
+      transform: rotate(-30deg);
+    }
+
+    to {
+      transform: rotate(30deg);
+    }
+  }
+
+  #contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .ui-accordion-header.ui-state-active {
