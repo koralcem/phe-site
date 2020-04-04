@@ -119,6 +119,20 @@ main {
     display: block;
   }
 
+  #colored-background {
+    background-color: $phe-blue;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: Georgia, serif;
+  }
+
+  #bordered {
+    border: 2px solid $phe-blue;
+    border-radius: 3px;
+    padding: 0 15px;
+  }
+
   img#phone {
     animation-duration: 1s;
     animation-name: phone-rotate;
@@ -139,7 +153,7 @@ main {
 
   #contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
   }
 }
