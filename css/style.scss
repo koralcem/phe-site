@@ -161,6 +161,11 @@ main {
     justify-content: start;
     align-items: center;
   }
+  
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .ui-accordion-header.ui-state-active {
