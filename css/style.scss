@@ -123,6 +123,12 @@ main {
     display: block;
     margin: 0 auto;
   }
+
+  img.fit-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .larger {
